@@ -98,6 +98,9 @@ In questo caso va data un'altezza fissa al genitore.
     float: left;
 }
 
+.col-top {
+    padding: 20px 0;
+}
 .col-left,
 .col-right {
     width: 20%;
@@ -121,4 +124,17 @@ In questo caso va data un'altezza fissa al genitore.
 }
 #img-3 {
     background-image: url("../img/img-3.jpg");
+}
+
+h4 {
+    padding: 20px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+}
+.entity {
+    color: red;
+    font-size: 25px;
 }
