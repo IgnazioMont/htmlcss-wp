@@ -4,14 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
 img {
     width: 100%;
 }
+
 
 /* CONTENITORE GENERICO */
 .wrapper {
@@ -24,6 +23,7 @@ img {
     margin: 20px 0;
 }
 
+/* Per la trasparenza delle immagini */
 .layover {
     /* Altezza/larghezza del contenitore */
     width: 100%;
@@ -31,6 +31,7 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
+
 
 /* HEADER */
 .logo img {
@@ -51,6 +52,7 @@ img {
     color: #858585;
 }
 .banner {
+    color: white;
     border-radius: 15px;
     background-image: url("../img/banner.jpg");
     background-size: cover;
@@ -62,7 +64,8 @@ img {
 /*
 Si può anche utilizzare "object-fit con l'immagine in HTML anzichè come background-image.
 Prende le stesse dimensioni del suo contenitore e si adatta
-In questo caso va data un'altezza fissa
+In questo caso va data un'altezza fissa al genitore.
+
 .banner img {
     object-fit: cover;
     width: 100%;
@@ -70,9 +73,52 @@ In questo caso va data un'altezza fissa
 }
 */
 
+.gray-text {
+    color: #858585;
+    font-size: 15px;
+}
+
 .banner .teaser {
     width: 45%;
     position: absolute;
     bottom: 8%;
     left: 4%;
+}
+
+
+/* MAIN */
+/* Clearfix, necessario al genitore che contiene i float */
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+}
+
+.col-left,
+.col-right {
+    width: 20%;
+}
+
+.col-center {
+    width: 58%;
+    margin: 0 1%;
+}
+.col-img {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+#img-1 {
+    background-image: url("../img/img-1.jpg");
+}
+#img-2 {
+    background-image: url("../img/banner-2.jpg");
+}
+#img-3 {
+    background-image: url("../img/img-3.jpg");
 }
