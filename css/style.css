@@ -8,18 +8,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 img {
+    /* Ognuna occupa il 100% del contenitore */
     width: 100%;
 }
 
 
-/* CONTENITORE GENERICO */
+/* COMMON */
 .wrapper {
     padding: 10px;
     width: 80%;
     margin: auto;
 }
 
-.block-margin {
+.common-margin {
     margin: 20px 0;
 }
 
@@ -32,12 +33,23 @@ img {
     border-radius: 15px;
 }
 
+.gray-text {
+    color: #858585;
+    font-size: 15px;
+}
+
+h4 {
+    padding: 20px 0;
+}
+
 
 /* HEADER */
+/* Logo */
 .logo img {
     width: 120px;
 }
 
+/* Menu */
 .menu {
     list-style-type: none;
     padding: 2% 0;
@@ -51,6 +63,8 @@ img {
     text-decoration: none;
     color: #858585;
 }
+
+/* Banner */
 .banner {
     color: white;
     border-radius: 15px;
@@ -60,7 +74,6 @@ img {
     height: 500px;
     position: relative;
 }
-
 /*
 Si può anche utilizzare "object-fit con l'immagine in HTML anzichè come background-image.
 Prende le stesse dimensioni del suo contenitore e si adatta
@@ -72,13 +85,7 @@ In questo caso va data un'altezza fissa al genitore.
     height: 100%;
 }
 */
-
-.gray-text {
-    color: #858585;
-    font-size: 15px;
-}
-
-.banner .teaser {
+.banner .branch {
     width: 45%;
     position: absolute;
     bottom: 8%;
@@ -94,23 +101,26 @@ In questo caso va data un'altezza fissa al genitore.
     clear: both;
 }
 
-.col {
+/* Colonne */
+main .content .col {
     float: left;
 }
 
-.col-top {
+main .col-top {
     padding: 20px 0;
 }
-.col-left,
-.col-right {
+
+.content .left,
+.content .right {
     width: 20%;
 }
 
-.col-center {
+.content .center {
     width: 58%;
     margin: 0 1%;
 }
-.col-img {
+/* Common img */
+.col .col-img {
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -126,9 +136,6 @@ In questo caso va data un'altezza fissa al genitore.
     background-image: url("../img/img-3.jpg");
 }
 
-h4 {
-    padding: 20px 0;
-}
 
 /* FOOTER */
 footer {
