@@ -1,0 +1,78 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* CONTENITORE GENERICO */
+.wrapper {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.block-margin {
+    margin: 20px 0;
+}
+
+.layover {
+    /* Altezza/larghezza del contenitore */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+/* HEADER */
+.logo img {
+    width: 120px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 2% 0;
+}
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #858585;
+}
+.banner {
+    border-radius: 15px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+
+/*
+Si può anche utilizzare "object-fit con l'immagine in HTML anzichè come background-image.
+Prende le stesse dimensioni del suo contenitore e si adatta
+In questo caso va data un'altezza fissa
+.banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.banner .teaser {
+    width: 45%;
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+}
